@@ -20,7 +20,7 @@ angular.module('app.routes', [])
     controller: 'noteDetailsController'
   })
 
-$urlRouterProvider.otherwise('/details')
+$urlRouterProvider.otherwise('/note')
 
   
 
