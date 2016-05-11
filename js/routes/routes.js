@@ -7,28 +7,20 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
-
-      .state('nuovaNota', {
-    url: '/newNote',
-    templateUrl: 'templates/nuovaNota.html',
-    controller: 'nuovaNotaCtrl'
-  })
 
   .state('note', {
     url: '/notes',
     templateUrl: 'templates/note.html',
-    controller: 'noteCtrl'
+    controller: 'notesController'
   })
 
   .state('dettaglio', {
     url: '/details',
     templateUrl: 'templates/dettaglio.html',
-    controller: 'dettaglioCtrl'
+    controller: 'noteDetailsController'
   })
 
-$urlRouterProvider.otherwise('/newNote')
+$urlRouterProvider.otherwise('/details')
 
   
 
