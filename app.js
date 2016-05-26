@@ -12,4 +12,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/view1'});
+}])
+.config(['recorderServiceProvider', function(recorderServiceProvider){
+      recorderServiceProvider.withMp3Conversion(true);
 }]);
